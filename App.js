@@ -1,10 +1,9 @@
-import {FlatList, Text, View, TouchableWithoutFeedback, Keyboard, Alert} from 'react-native';
+import {FlatList, View, TouchableWithoutFeedback, Keyboard, Alert} from 'react-native';
 import React, { useState } from "react";
 import styles from "./ContainerStyles/MainStyles";
 import Header from "./components/header";
 import TodoItem from "./components/TodoItem";
 import AddTodo from "./components/addTodo";
-
 export default function App() {
 
     const [toDos, setTodos] = useState([

@@ -33,6 +33,8 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderStyle: "dashed",
         borderRadius: 10,
+        flexDirection: "row",
+
     },
     input: {
         marginBottom: 10,
@@ -49,6 +51,9 @@ const styles = StyleSheet.create({
         justifyContent: "space-around",
         alignItems: "flex-end",
     },
+    itemText: {
+        marginLeft: 15,
+    }
 });
 
 export default styles;
