@@ -9,9 +9,11 @@ const styles = StyleSheet.create({
     },
     content: {
         padding: 40,
+        flex: 1,
     },
     list: {
         marginTop: 20,
+        flex: 1,
     },
     header: {
       height: 100,
@@ -38,7 +40,15 @@ const styles = StyleSheet.create({
         paddingVertical: 6,
         borderBottomWidth: 1,
         borderBottomColor: "#ddd",
-    }
+    },
+    sbContainer: {
+        paddingTop: 100,
+        backgroundColor: "#ddd",
+        // flex: 1,
+        flexDirection: "row",
+        justifyContent: "space-around",
+        alignItems: "flex-end",
+    },
 });
 
 export default styles;

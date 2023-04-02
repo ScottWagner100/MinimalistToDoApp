@@ -39,22 +39,22 @@ export default function App() {
           Keyboard.dismiss();
           console.log("Dismissed Keyboard");
       }}>
-    <View style={styles.container}>
-        <Header></Header>
-        <View style ={styles.content}>
-            <AddTodo submitHandler={submitHandler}/>
-            <View style={styles.list}>
-                <View>
-                    <FlatList
-                        data={toDos}
-                        renderItem={({ item }) => (
-                            <TodoItem item={ item } pressHandler={pressHandler} />
-                        )}
-                    />
+            <View style={styles.container}>
+                <Header></Header>
+                <View style ={styles.content}>
+                    <AddTodo submitHandler={submitHandler}/>
+                    <View style={styles.list}>
+                        <View>
+                            <FlatList
+                                data={toDos}
+                                renderItem={({ item }) => (
+                                    <TodoItem item={ item } pressHandler={pressHandler} />
+                                )}
+                            />
+                        </View>
+                    </View>
                 </View>
             </View>
-        </View>
-    </View>
       </TouchableWithoutFeedback>
   );
 }
